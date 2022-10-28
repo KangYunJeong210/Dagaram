@@ -12,6 +12,11 @@
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     
         <meta name="viewport" content="width=1450">
+
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
 <!--데일리 다가람-->
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -41,6 +46,7 @@
 
 		});
 	</script>
+
 
 <!--데일리 다가람-->
 
@@ -72,7 +78,7 @@
             </div><!--right_list-->
     
             <div class="logo"><a href="index.html">
-                <img src="./images/main/Dagaram_logo_sub_green.png" alt=""></a>
+                <img src="./images/main/Header_logo.png" alt=""></a>
             </div>
           <!--마진오토-->
           <ul id="Header_list" class="clearfix">
@@ -115,7 +121,40 @@
       <!--gnb-->
 
       <div class="Main_banner">
-        <video src="./images/main/DAGARAM_MainBanner (1).mp4" autoplay loop muted width="100%">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/main/DAGARAM_MAIN_BANNER.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./images/main/DAGARAM_MAIN_BANNER1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./images/main/DAGARAM_MAIN_BANNER3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./images/main/DAGARAM_MAIN_BANNER4.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 0,
+              centeredSlides: true,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
             
           </video>
 
@@ -125,64 +164,53 @@
 
 
         <!--배경-->
-       
-    
-
-        <nav class="menu-box-1">
-            <div class="button"><img src="./images/main/arrow_prev.png" alt=""></div>
-            <ul>
-              <li>
-                <a href="#">로그인</a>
-              </li>
-              <li>
-                <a href="#">회원가입</a>
-              </li>
-             
-              <li><a href="sub2.html"> 제품 </a></li>
-              <li><a href="sub1.html">브랜드</a>
-                <li><a href="sub3.html#Tea_museum">티뮤지엄</a></li>
-                <li><a href="sub4.html">커뮤니티</a></li>
-            </ul>
-          </nav>
 
 
+<div class="Main_notice">
+    <div class="notice_slide">
+        <p>공지사항</p> 
+        <ul>
+          <li><a href="#">[공지] 10월 데일리 다가람 배송 지연 공지 </a></li>
+          <li><a href="#">환불/교환/반품 전 필독사항입니다. </a></li>
+          <li><a href="#">2022 11월 카페쇼 다가람 참여 일정        </a></li>
+          <li><a href="#">문의사항 답변은 최대 24시간까지 소요될 수 있습니다.</a></li>
+
+          
+        </ul>
+      </div>
+</div><!--Main_banner-->
 
 <!--brand_story---------------------------------->
     <div id="brand_story">
-        <div class="brand_story_inner">
-            <div class="brand_story_title">
-                <a href="sub1.html#Story">
-                    <img src="./images/main/Leaf_iller.png" alt="">
-                    <h1>다가람 이야기</h1>
-                </a> 
-                </div><!--brand_story_title-->
-    
-
-                
-                
-            <div class="brand_story_box">
-                <div class="brand_story_text" data-aos="fade-up">
-                    <h2>다가람</h2>
-                    <p>
-                        다가람은<br>
-                        최고급 국내산 재료들을 직접<br>
-                        제조하여 최상의 만족도를 제공해드리는<br>
-                        전통차 브랜드입니다.<br>
-                        아름다운 자연의 산물이<br>
-                        장인의 손길을 만나 완성된<br>
-                        전통차들을 만나보세요.<br>
-                    </p>
-                    <a href="./sub1.html">
-                        자세히 보기
-                    </a>
-                </div><!--brand_story_text-->
-    
-
-                    <div class="brand_story_pic" data-aos="fade-down" >
-                    <img src="./images/main/Main_story_hand.png" alt="">
-                </div><!--brand_story_pic-->
-            </div><!--brand_story_box-->
+        <div class="Story_box">
+            <div class="Story_text">
+            <h1>브랜드 이야기</h1>
+            <p>다가람만의 이야기를 만나보세요.
+            </p>
+        </div>
+        <div class="brand_story_inner1">
+            <video src="./images/main/DAGARAM_MainBanner.mp4" width="1000px" loop autoplay muted></video>
         </div><!--brand_story_inner-->
+        <div id="brand_story">
+            <div class="brand_story_inner2">
+                <ul>
+                    <li data-aos="fade-right"><a href="sub1.html#Brand_con">
+                        <img src="./images/main/layer.png" alt="">
+                        <span class="text">브랜드 이야기</span></a></li>
+
+                    <li data-aos="fade-left"><a href="sub1.html#Story">
+                        <img src="./images/main/leaves.png" alt="">
+                        <span class="text">차 이야기</span>
+                        </a></li>
+                    <li data-aos="fade-right"><a href="sub1.html#Make_story">
+                        <img src="./images/main/Kettle.png" alt="">
+                        <span class="text">제조과정</span>
+                    </a>
+                    </li>
+
+                </ul>
+            </div><!--brand_story_inner-->
+        </div><!--Story_box-->
     </div><!--brand_story--------------------------------->
 
 
